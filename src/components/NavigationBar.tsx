@@ -70,7 +70,7 @@ export function NavigationBar({
       <div className="hidden md:flex fixed top-0 left-0 right-0 bg-background/95 backdrop-blur-sm border-b z-40">
         <div className="flex items-center justify-between w-full px-6 py-4">
           <div className="flex items-center space-x-6">
-            <h1 className="text-xl font-medium">Sabiduría</h1>
+            <h1 className="text-xl font-medium">Minuto</h1>
             
             <nav className="flex items-center space-x-4">
               {navigationItems.map((item) => {
