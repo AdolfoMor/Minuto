@@ -1,6 +1,7 @@
 // src/components/ProfileView.tsx
 import React from "react";
 import { UserProgress, Specialization } from "../types";
+import { Button } from "./ui/button";
 
 interface ProfileViewProps {
   user: any;
@@ -22,9 +23,9 @@ export const ProfileView: React.FC<ProfileViewProps> = ({
       {/* Sección de bienvenida y logout */}
       <div className="p-6 border rounded-lg">
         <h3 className="font-medium mb-4">Bienvenido, {user.email}</h3>
-        <button onClick={handleLogout} className="">
-          Cerrar Sesión
-        </button>
+        <Button variant="destructive" onClick={handleLogout}>
+            Cerrar sesión
+        </Button>
         <div>
           <h4 className="font-medium mt-4 mb-2">Actualizar Información</h4>
           <input
@@ -37,11 +38,11 @@ export const ProfileView: React.FC<ProfileViewProps> = ({
             placeholder="Nuevo email"
             className="w-full p-2 border rounded mb-2"
           />
-          <input 
+          <input
             type="text"
             placeholder="Nuevo teléfono"
             className="w-full p-2 border rounded mb-2"
-            />  
+          />
           <input
             type="password"
             placeholder="Nueva contraseña"
